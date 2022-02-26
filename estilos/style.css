@@ -7,6 +7,15 @@
   background-color: rgb(18, 13, 20);
 }
 
+.obras__coleccion {
+
+  transition: all 4s;}
+
+
+.obras__coleccion:hover {
+  
+  transform:scale(2,2);
+}
 
 aside {
   display: none;
@@ -56,7 +65,7 @@ footer {
   width: 100%;
 
   height: 40px;
-  background-color: black;
+  background-color: rgb(18, 13, 20);
   color: white;
 }
 
@@ -87,24 +96,7 @@ footer {
 
 }
 
-.item1 img {
-  border: solid black 2px;
-  padding: 0.5em;
-}
 
-.item2 img {
-  border: solid black 2px;
-  padding: 0.5em;
-}
-
-.item1 {
-  grid-area: item1;
-}
-
-.item2 {
-  grid-area: item2;
-
-}
 
 
 iframe {
@@ -119,12 +111,6 @@ a {
   color: black;
 }
 
-i {
-  display: inline-flex;
-  padding: 1.5em;
-  font-size: 14px;
-
-}
 
 
 form {
@@ -137,9 +123,7 @@ form {
 }
 
 
-.obras__coleccion {
-  padding: 40px
-}
+
 
 .fechas__eventos {
   padding: 0.5em;
