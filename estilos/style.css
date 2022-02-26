@@ -17,6 +17,9 @@
   transform:scale(2,2);
 }
 
+.container img {inline-size: 100%;}
+
+
 aside {
   display: none;
 }
