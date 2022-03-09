@@ -1,0 +1,178 @@
+@import "generales";
+@import "fuentes";
+@import "footer";
+
+
+
+$negroCaraffa: rgb(18, 13, 20);
+
+
+p {
+  font-family:'Roboto',sans-serif;
+  font-size: 15px;
+  padding: 0.5em;
+  text-align: justify;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 18px;
+
+}
+
+
+
+
+.black {
+  background-color: $negroCaraffa;
+}
+
+
+.obras__coleccion {
+
+  transition: all 2s;
+
+&:hover {
+
+  transform: scale(1.25, 1.25);}
+}
+
+
+ul {
+  list-style: none;
+
+  li {
+    padding: 4px;
+  }
+}
+
+
+
+.nav-link {
+  font-size: 1.25em;
+}
+
+
+
+.subtexto {
+
+  text-align: justify;
+  text-transform: uppercase;
+
+  color: beige;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+
+iframe {
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+
+
+
+form {
+  padding: 1.5em;
+}
+
+
+.list {
+  display: none;
+}
+
+.container img {
+  inline-size: 100%;
+}
+
+
+.fechas__eventos {
+  padding: 0.25em;
+  margin-top:1em;
+  text-transform: uppercase;
+  text-align:justify;
+
+}
+
+.entradas {
+  font-family:'Roboto',sans-serif;
+  padding: 0.5em;
+  margin-top:1em;
+  text-align: justify;
+  
+}
+
+.footer__short {
+  position: absolute;
+}
+
+@media screen and (max-width:576px) {
+
+
+  .footer__short {
+    position: relative;
+  }
+
+
+  .clearfix iframe {
+    inline-size: 100%;
+  }
+
+  .clearfix img {
+    inline-size: 100%;
+  }
+
+  .contacto {
+    inline-size: 100%;
+  }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+
+  .footer__short {
+    position: relative;
+  }
+
+
+  .clearfix iframe {
+    inline-size: 100%;
+  }
+
+  .clearfix img {
+    inline-size: 100%;
+  }
+
+  .contacto {
+    inline-size: 100%;
+  }
+
+}
+
+@media screen and (max-width:992px) {
+
+  .footer__short {
+    position: relative;
+  }
+
+  .clearfix iframe {
+    inline-size: 100%;
+  }
+
+  .clearfix img {
+    inline-size: 100%;
+  }
+
+  .contacto {
+    inline-size: 100%;
+  }
+
+
+}
