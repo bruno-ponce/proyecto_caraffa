@@ -6,20 +6,36 @@
 
 $negroCaraffa: rgb(18, 13, 20);
 
+@mixin estilos-textos {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color:$negroCaraffa;
+  
+}
 
 p {
   font-family:'Roboto',sans-serif;
   font-size: 15px;
   padding: 0.5em;
-  text-align: justify;
-  letter-spacing: 2px;
-  word-spacing: 2px;
+  @include estilos-textos;
   line-height: 18px;
 
 }
 
+.subtexto {
 
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(26, 121, 175, 0.418);
+  color: beige;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
 
+.bienvenidos {@extend .entradas;
+  text-align:center;
+
+}
 
 .black {
   background-color: $negroCaraffa;
@@ -48,18 +64,6 @@ ul {
 
 .nav-link {
   font-size: 1.25em;
-}
-
-
-
-.subtexto {
-
-  text-align: justify;
-  text-transform: uppercase;
-
-  color: beige;
-  letter-spacing: 2px;
-  word-spacing: 2px;
 }
 
 
@@ -95,7 +99,7 @@ form {
   padding: 0.25em;
   margin-top:1em;
   text-transform: uppercase;
-  text-align:justify;
+  text-align:map-get($fuentes, justificado);
 
 }
 
@@ -130,6 +134,7 @@ form {
   .contacto {
     inline-size: 100%;
   }
+
 }
 
 
@@ -154,6 +159,8 @@ form {
     inline-size: 100%;
   }
 
+ 
+
 }
 
 @media screen and (max-width:992px) {
@@ -173,6 +180,8 @@ form {
   .contacto {
     inline-size: 100%;
   }
+
+ 
 
 
 }

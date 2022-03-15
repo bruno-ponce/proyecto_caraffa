@@ -4,7 +4,7 @@
   margin: 0; }
 
 html {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto, sans-serif"; }
 
 body {
   background-color: beige; }
@@ -27,10 +27,21 @@ p {
   font-family: 'Roboto',sans-serif;
   font-size: 15px;
   padding: 0.5em;
-  text-align: justify;
   letter-spacing: 2px;
   word-spacing: 2px;
+  color: #120d14;
   line-height: 18px; }
+
+.subtexto {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(26, 121, 175, 0.418);
+  color: beige;
+  letter-spacing: 2px;
+  word-spacing: 2px; }
+
+.bienvenidos {
+  text-align: center; }
 
 .black {
   background-color: #120d14; }
@@ -47,13 +58,6 @@ ul {
 
 .nav-link {
   font-size: 1.25em; }
-
-.subtexto {
-  text-align: justify;
-  text-transform: uppercase;
-  color: beige;
-  letter-spacing: 2px;
-  word-spacing: 2px; }
 
 iframe {
   padding: 1em; }
@@ -79,7 +83,7 @@ form {
   text-transform: uppercase;
   text-align: justify; }
 
-.entradas {
+.entradas, .bienvenidos {
   font-family: 'Roboto',sans-serif;
   padding: 0.5em;
   margin-top: 1em;

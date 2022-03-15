@@ -3,7 +3,13 @@
     margin: 0;
   }
 
+$fuentes: (
+  roboto:'Roboto, sans-serif',
+justificado:justify, 
+);
 
-html {font-family: 'Roboto', sans-serif;}
+html {font-family: map-get($fuentes, roboto);}
 
-body {background-color: beige;}
+body {
+  
+  background-color: beige;}
