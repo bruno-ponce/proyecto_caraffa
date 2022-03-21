@@ -9,12 +9,12 @@ $negroCaraffa: rgb(18, 13, 20);
 @mixin estilos-textos {
   letter-spacing: 2px;
   word-spacing: 2px;
-  color:$negroCaraffa;
-  
+  color: $negroCaraffa;
+
 }
 
 p {
-  font-family:'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   padding: 0.5em;
   @include estilos-textos;
@@ -26,14 +26,14 @@ p {
 
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(26, 121, 175, 0.418);
+  background-color: $negroCaraffa;
   color: beige;
   letter-spacing: 2px;
   word-spacing: 2px;
 }
 
-.bienvenidos {@extend .entradas;
-  text-align:center;
+.bienvenidos {
+  @extend .entradas;
 
 }
 
@@ -46,9 +46,10 @@ p {
 
   transition: all 2s;
 
-&:hover {
+  &:hover { 
 
-  transform: scale(1.25, 1.25);}
+    transform: scale(1.25, 1.25);
+  }
 }
 
 
@@ -79,7 +80,7 @@ a {
   color: black;
 }
 
-
+.contacto {color:black};
 
 form {
   padding: 1.5em;
@@ -97,23 +98,26 @@ form {
 
 .fechas__eventos {
   padding: 0.25em;
-  margin-top:1em;
+  margin-top: 1em;
   text-transform: uppercase;
-  text-align:map-get($fuentes, justificado);
+  text-align: map-get($fuentes, justificado);
 
 }
 
 .entradas {
-  font-family:'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0.5em;
-  margin-top:1em;
-  text-align: justify;
+  margin-top: 0.5em;
   
+  
+
 }
 
 .footer__short {
   position: absolute;
 }
+
+
 
 @media screen and (max-width:576px) {
 
@@ -159,7 +163,7 @@ form {
     inline-size: 100%;
   }
 
- 
+
 
 }
 
@@ -181,7 +185,7 @@ form {
     inline-size: 100%;
   }
 
- 
+
 
 
 }

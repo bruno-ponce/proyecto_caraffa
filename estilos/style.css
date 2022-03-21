@@ -9,22 +9,31 @@ html {
 body {
   background-color: beige; }
 
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.25em;
+  color: black;
+  margin-top: 0.25em;
+  font-size: 25px; }
+
 footer {
   background-color: #120d14;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 3em;
+  line-height: 1.5em;
+  font-size: 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 0.5em;
-  padding-top: 0.5em;
-  padding-right: 0.5em;
+  padding-top: 0.75em;
+  padding-right: 0.75em;
   color: white; }
   footer .footer {
     position: relative; }
 
 p {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   padding: 0.5em;
   letter-spacing: 2px;
@@ -35,13 +44,10 @@ p {
 .subtexto {
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(26, 121, 175, 0.418);
+  background-color: #120d14;
   color: beige;
   letter-spacing: 2px;
   word-spacing: 2px; }
-
-.bienvenidos {
-  text-align: center; }
 
 .black {
   background-color: #120d14; }
@@ -68,6 +74,9 @@ ul {
 a {
   color: black; }
 
+.contacto {
+  color: black; }
+
 form {
   padding: 1.5em; }
 
@@ -84,10 +93,9 @@ form {
   text-align: justify; }
 
 .entradas, .bienvenidos {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 0.5em;
-  margin-top: 1em;
-  text-align: justify; }
+  margin-top: 0.5em; }
 
 .footer__short {
   position: absolute; }
