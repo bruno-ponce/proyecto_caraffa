@@ -145,6 +145,8 @@ form {
     .carousel-inner img {
       width: 100%;
       height: auto; }
+  .obras__coleccion {
+    inline-size: 100%; }
   .container-fluid iframe {
     inline-size: 100%; }
   .footer__short {

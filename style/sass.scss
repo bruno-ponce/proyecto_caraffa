@@ -189,11 +189,13 @@ form {
     }
   }
 
+
+  .obras__coleccion {inline-size:100%;}
+
+
   .container-fluid iframe {
     inline-size: 100%;
   }
-
-
 
   .footer__short {
     position: relative;
@@ -264,6 +266,10 @@ form {
     padding-top: 0.25em;
   }
 
+  
+  .obras__coleccion {inline-size:100%;}
+
+
 }
 
 @media screen and (max-width:992px) {
@@ -298,6 +304,9 @@ form {
   .clearfix img {
     inline-size: 100%;
   }
+
+  
+  .obras__coleccion {inline-size:100%;}
 
   .contacto {
     inline-size: 100%;
