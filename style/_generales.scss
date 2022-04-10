@@ -3,18 +3,23 @@
   margin: 0;
 }
 
-$fuentes: (roboto:'Roboto, sans-serif',
-  justificado:justify,
+$fuentes: (roboto:'Roboto, sans-serif', nunito:'Nunito, sans-serif', playfair:'Playfair Display, serif',
+  justificado:justify, 
 );
 
-html {
-  font-family: map-get($fuentes, roboto);
-}
 
 body {
 
   background-color: beige;
 }
 
-h2 {font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding:0.25em; color:black; margin-top:0.25em; font-size:25px;}
+
+h2 {
+  font-family: 'Anek Bangla', sans-serif;
+  padding: 0.25em;
+  color: black;
+
+  margin-top: 0.25em;
+  font-size: 30px;
+  text-align: center;
+}

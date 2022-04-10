@@ -6,35 +6,51 @@
 
 $negroCaraffa: rgb(18, 13, 20);
 
+
+
 @mixin estilos-textos {
   letter-spacing: 2px;
-  word-spacing: 2px;
   color: $negroCaraffa;
 
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+
   font-size: 15px;
   padding: 0.5em;
   @include estilos-textos;
-  line-height: 18px;
 
 }
 
+
 .subtexto {
 
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   text-transform: uppercase;
   background-color: $negroCaraffa;
   color: beige;
-  letter-spacing: 2px;
-  word-spacing: 2px;
+
 }
 
-.bienvenidos {
-  @extend .entradas;
 
+.entradas {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.coleccion {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
+  margin-top: 0.5em;
+}
+
+
+.bienvenidos {
+  @extend .coleccion;
+ 
 }
 
 .black {
@@ -46,7 +62,7 @@ p {
 
   transition: all 2s;
 
-  &:hover { 
+  &:hover {
 
     transform: scale(1.25, 1.25);
   }
@@ -61,6 +77,13 @@ ul {
   }
 }
 
+form .row {
+  padding: 1em;
+}
+
+.contacto {
+  padding-top: 2em
+}
 
 
 .nav-link {
@@ -72,15 +95,14 @@ iframe {
   padding: 1em;
 }
 
-ul {
-  list-style: none;
-}
 
 a {
   color: black;
 }
 
-.contacto {color:black};
+.contacto {
+  color: black
+}
 
 form {
   padding: 1.5em;
@@ -95,37 +117,93 @@ form {
   inline-size: 100%;
 }
 
+.img--visitar {
+  padding: 1em;
+  padding-left: 2em;
+}
+
+
 
 .fechas__eventos {
-  padding: 0.25em;
-  margin-top: 1em;
-  text-transform: uppercase;
-  text-align: map-get($fuentes, justificado);
-
-}
-
-.entradas {
-  font-family: 'Roboto', sans-serif;
   padding: 0.5em;
-  margin-top: 0.5em;
+  margin: 1em;
+  font-weight: 650;
+  text-transform: uppercase;
+  font-family: 'Anek Bangla', sans-serif;
+  text-align: map-get($fuentes, justificado);
   
-  
-
 }
+
+.muestras {font-family: 'Anek Bangla', sans-serif;}
+
+.museo--texto {
+  padding-top: 2em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.museo--vid {
+  padding-bottom: 2em;
+}
+
+.muestra1 {
+
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.carousel-inner {
+  height: 85vh;
+
+  img {
+    width: 100%;
+    max-height: 85vh;
+  }
+}
+
+
+.formi {
+  border: 1em, solid, black
+}
+
 
 .footer__short {
   position: absolute;
 }
 
 
+.visitar--entradas {
+  margin-top: 1em;
+}
+
+
 
 @media screen and (max-width:576px) {
+
+  .carousel-inner {
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .container-fluid iframe {
+    inline-size: 100%;
+  }
+
 
 
   .footer__short {
     position: relative;
   }
 
+  .muestra1 {
+    inline-size: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 
   .clearfix iframe {
     inline-size: 100%;
@@ -137,8 +215,12 @@ form {
 
   .contacto {
     inline-size: 100%;
+    padding-top: 0.25em;
   }
 
+  .img--visitar {
+    display: none
+  }
 }
 
 
@@ -146,10 +228,28 @@ form {
 @media screen and (max-width:768px) {
 
 
+  .container-fluid iframe {
+    inline-size: 100%;
+  }
+
+
+  .carousel-inner {
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .img--visitar {
+    display: none
+  }
+
+
   .footer__short {
     position: relative;
   }
-
 
   .clearfix iframe {
     inline-size: 100%;
@@ -161,14 +261,28 @@ form {
 
   .contacto {
     inline-size: 100%;
+    padding-top: 0.25em;
   }
-
-
 
 }
 
 @media screen and (max-width:992px) {
 
+  .container-fluid iframe {
+    inline-size: 100%;
+  }
+
+  .carousel-inner {
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+
   .footer__short {
     position: relative;
   }
@@ -177,12 +291,17 @@ form {
     inline-size: 100%;
   }
 
+  .img--visitar {
+    display: none
+  }
+
   .clearfix img {
     inline-size: 100%;
   }
 
   .contacto {
     inline-size: 100%;
+    padding-top: 0.25em;
   }
 
 

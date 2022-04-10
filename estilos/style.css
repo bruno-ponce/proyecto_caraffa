@@ -1,20 +1,21 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Anek+Bangla&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Anek+Bangla&display=swap);
 * {
   padding: 0;
   margin: 0; }
-
-html {
-  font-family: "Roboto, sans-serif"; }
 
 body {
   background-color: beige; }
 
 h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Anek Bangla', sans-serif;
   padding: 0.25em;
   color: black;
   margin-top: 0.25em;
-  font-size: 25px; }
+  font-size: 30px;
+  text-align: center; }
 
 footer {
   background-color: #120d14;
@@ -25,7 +26,7 @@ footer {
   font-size: 20px;
   display: flex;
   justify-content: center;
-  gap: 0.5em;
+  gap: 0.75em;
   padding-top: 0.75em;
   padding-right: 0.75em;
   color: white; }
@@ -33,21 +34,28 @@ footer {
     position: relative; }
 
 p {
-  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   padding: 0.5em;
   letter-spacing: 2px;
-  word-spacing: 2px;
-  color: #120d14;
-  line-height: 18px; }
+  color: #120d14; }
 
 .subtexto {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   text-transform: uppercase;
   background-color: #120d14;
-  color: beige;
-  letter-spacing: 2px;
-  word-spacing: 2px; }
+  color: beige; }
+
+.entradas {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
+  margin-top: 0.5em;
+  text-align: center; }
+
+.coleccion, .bienvenidos {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
+  margin-top: 0.5em; }
 
 .black {
   background-color: #120d14; }
@@ -62,14 +70,17 @@ ul {
   ul li {
     padding: 4px; }
 
+form .row {
+  padding: 1em; }
+
+.contacto {
+  padding-top: 2em; }
+
 .nav-link {
   font-size: 1.25em; }
 
 iframe {
   padding: 1em; }
-
-ul {
-  list-style: none; }
 
 a {
   color: black; }
@@ -86,31 +97,82 @@ form {
 .container img {
   inline-size: 100%; }
 
+.img--visitar {
+  padding: 1em;
+  padding-left: 2em; }
+
 .fechas__eventos {
-  padding: 0.25em;
-  margin-top: 1em;
+  padding: 0.5em;
+  margin: 1em;
+  font-weight: 650;
   text-transform: uppercase;
+  font-family: 'Anek Bangla', sans-serif;
   text-align: justify; }
 
-.entradas, .bienvenidos {
-  font-family: 'Roboto', sans-serif;
-  padding: 0.5em;
-  margin-top: 0.5em; }
+.muestras {
+  font-family: 'Anek Bangla', sans-serif; }
+
+.museo--texto {
+  padding-top: 2em;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; }
+
+.museo--vid {
+  padding-bottom: 2em; }
+
+.muestra1 {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+
+.carousel-inner {
+  height: 85vh; }
+  .carousel-inner img {
+    width: 100%;
+    max-height: 85vh; }
+
+.formi {
+  border: 1em, solid, black; }
 
 .footer__short {
   position: absolute; }
 
+.visitar--entradas {
+  margin-top: 1em; }
+
 @media screen and (max-width: 576px) {
+  .carousel-inner {
+    height: auto; }
+    .carousel-inner img {
+      width: 100%;
+      height: auto; }
+  .container-fluid iframe {
+    inline-size: 100%; }
   .footer__short {
     position: relative; }
+  .muestra1 {
+    inline-size: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em; }
   .clearfix iframe {
     inline-size: 100%; }
   .clearfix img {
     inline-size: 100%; }
   .contacto {
-    inline-size: 100%; } }
+    inline-size: 100%;
+    padding-top: 0.25em; }
+  .img--visitar {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
+  .container-fluid iframe {
+    inline-size: 100%; }
+  .carousel-inner {
+    height: auto; }
+    .carousel-inner img {
+      width: 100%;
+      height: auto; }
+  .img--visitar {
+    display: none; }
   .footer__short {
     position: relative; }
   .clearfix iframe {
@@ -118,14 +180,25 @@ form {
   .clearfix img {
     inline-size: 100%; }
   .contacto {
-    inline-size: 100%; } }
+    inline-size: 100%;
+    padding-top: 0.25em; } }
 
 @media screen and (max-width: 992px) {
+  .container-fluid iframe {
+    inline-size: 100%; }
+  .carousel-inner {
+    height: auto; }
+    .carousel-inner img {
+      width: 100%;
+      height: auto; }
   .footer__short {
     position: relative; }
   .clearfix iframe {
     inline-size: 100%; }
+  .img--visitar {
+    display: none; }
   .clearfix img {
     inline-size: 100%; }
   .contacto {
-    inline-size: 100%; } }
+    inline-size: 100%;
+    padding-top: 0.25em; } }
